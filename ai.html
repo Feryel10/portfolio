@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Feryell Aidoudi</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-icon">💼</span>
+          <div>
+            <p>Portfolio</p>
+            <h1>Feryell Aidoudi</h1>
+          </div>
+        </div>
+        <nav class="site-nav">
+          <a href="#about">À propos</a>
+          <a href="#skills">Compétences</a>
+          <a href="#projects">Projets</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div>
+            <p class="eyebrow">Développement, data & cloud</p>
+            <h2>Bonjour, je suis Feryell</h2>
+            <p>
+              Étudiante en informatique passionnée par l’analyse de données,
+              l’architecture cloud et la création d’expériences numériques
+              efficaces.
+            </p>
+            <div class="hero-actions">
+              <a class="button" href="#projects">Voir mes projets</a>
+              <a class="button button-secondary" href="#contact">Me contacter</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h3>Profil rapide</h3>
+            <ul>
+              <li>Cloud native & AWS</li>
+              <li>Data analysis & BI</li>
+              <li>Python, SQL, HTML/CSS</li>
+              <li>UX simple et efficace</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section container">
+        <div class="section-header">
+          <span class="section-label">À propos</span>
+          <h2>Qui je suis</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>
+              Je suis une étudiante motivée en informatique avec un fort
+              intérêt pour les technologies cloud, l’analyse de données et les
+              systèmes scalables. J’aime transformer des idées en solutions
+              claires et visuelles.
+            </p>
+            <p>
+              En dehors des projets tech, je développe mon sens de la rigueur
+              par des activités créatives et une approche orientée résultat.
+            </p>
+          </div>
+          <div class="about-details">
+            <div>
+              <strong>Localisation :</strong>
+              <span>France</span>
+            </div>
+            <div>
+              <strong>Études :</strong>
+              <span>Licence Informatique</span>
+            </div>
+            <div>
+              <strong>Objectif :</strong>
+              <span>Continuer à apprendre et réaliser des projets concrets</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Compétences</span>
+            <h2>Outils et technologies</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <h3>Cloud</h3>
+              <p>AWS EC2, S3, CloudFormation, déploiement et sécurité.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Data</h3>
+              <p>Python, Pandas, SQL, Power BI, ETL et visualisation.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Web</h3>
+              <p>HTML, CSS, JavaScript, conception responsive et UX.</p>
+            </article>
+            <article class="skill-card">
+              <h3>Organisation</h3>
+              <p>Gestion de projets, documentation et communication claire.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section container">
+        <div class="section-header">
+          <span class="section-label">Projets</span>
+          <h2>Exemples concrets</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Dashboard interactif</h3>
+            <p>
+              Conception d’un tableau de bord Power BI pour analyser des
+              indicateurs de performance et faciliter la prise de décision.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Analyse de données Python</h3>
+            <p>
+              Traitement de sources de données variées, nettoyage et visualisation
+              avec Pandas et Matplotlib.
+            </p>
+          </article>
+          <article class="project-card">
+            <h3>Déploiement AWS</h3>
+            <p>
+              Mise en place d’un environnement web sur AWS EC2 avec configuration
+              serveur et scripts d’automatisation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-alt">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-header">
+              <span class="section-label">Contact</span>
+              <h2>Échangeons</h2>
+            </div>
+            <p>
+              Pour toute question, proposition de stage ou collaboration,
+              envoyez-moi un message via le formulaire.
+            </p>
+            <p>
+              Email : <a href="mailto:feryell@example.com">feryell@example.com</a>
+            </p>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <label>
+              Nom
+              <input type="text" name="name" placeholder="Votre nom" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Votre email" required />
+            </label>
+            <label>
+              Message
+              <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+            </label>
+            <button type="submit">Envoyer</button>
+            <p id="successMessage" class="success-message" hidden>
+              Merci ! Votre message a été envoyé.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2026 Feryell Aidoudi. Portfolio personnel.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
